@@ -1,0 +1,13 @@
+  #OpenTelemetry Configuration
+  application:
+    name: validation-preprocessor
+
+  otel:
+    tracing:
+      endpoint: http://localhost:4317
+    resource:
+      attributes:
+        - key: exception.escaped
+          value: "preProcessor"
+        - key: exception.error
+          value

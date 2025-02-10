@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service ModelInferenceService {
+  rpc Infer (ModelRequest) returns (ModelResponse);
+}
+
+message ModelRequest {
+  repeated double data = 1;
+}
+
+message ModelResponse {
+  string result = 1;
+}
